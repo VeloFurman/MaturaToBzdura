@@ -10,7 +10,7 @@ PL
           -Język angielski
           -Język włoski
           -Przejdziemy z konsoli na aplikację okienkową
-          -Wzbogacenie programu o kolejne funkcje
+          -Dodanie do programu kolejnych funkcji
           -Zapisywanie wyników do pliku
           .... I wiele wiele więcej.
 
