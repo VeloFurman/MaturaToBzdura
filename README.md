@@ -21,7 +21,7 @@ Stay tuned!
 
 ___________________________________________________________________________________________________________________________________________
 VERSION:
-   # v.0001
+      # v.0001
           -funkcja obliczania równania kwadratowego [100%]
           -funkcja sinusów, cosinusów i tangensów [1%]
           
