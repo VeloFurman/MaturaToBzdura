@@ -1,6 +1,6 @@
 PL
    # MaturaToBzdura
-          Po co nam matura z matematyki? Skoro są kalkulatory.
+      Po co nam matura z matematyki? Skoro są kalkulatory.
           Z racji tego, że bardzo nie lubię rozwiązywać zadanek z matematyki, stwierdziłem że fajnie by było
           mieć taki programik, w którym wpiszesz dane z zadania, a program poda Ci wyniki. W końcu mamy erę
           komputerów i teraz mało który zwyczajny człowiek (podkreślam zwyczajny :D) liczy na piechotę.
