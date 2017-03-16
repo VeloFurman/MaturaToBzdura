@@ -1,6 +1,3 @@
-// Calculator.cpp: Okreœla punkt wejœcia dla aplikacji konsoli.
-//
-
 #include "stdafx.h"
 #include "iostream"
 #include "cmath"
@@ -37,15 +34,15 @@ void version()
 	cout << right << "VERSION v.0001";
 	cout << endl << endl << endl << endl << endl << endl << endl << endl;
 	cout.width(75);
-	cout << "Aby kontynuowaæ naciœnij ENTER.";
+	cout << "Aby kontynuowaÃ¦ naciÅ“nij ENTER.";
 	cin.get();
 	cls();
 }
 void hello()
 {
-	cout << "Witam w moim kalkulatorze, mam nadziejê ¿e wyrêczy Ciê w zadaniach z matematyki, " << endl;
-	cout << "którymi jesteœ gnêbiony przez wiele lat ma³o potrzebnej nauki. :P :)" << endl << endl;
-	cout << "Tak¿e do dzie³a. Aby przejœæ do menu naciœnij ENTER.";
+	cout << "Witam w moim kalkulatorze, mam nadziejÃª Â¿e wyrÃªczy CiÃª w zadaniach z matematyki, " << endl;
+	cout << "ktÃ³rymi jesteÅ“ gnÃªbiony przez wiele lat maÂ³o potrzebnej nauki. :P :)" << endl << endl;
+	cout << "TakÂ¿e do dzieÂ³a. Aby przejÅ“Ã¦ do menu naciÅ“nij ENTER.";
 
 	cin.get();
 }
@@ -55,7 +52,7 @@ void cls()
 }
 void rownanie_kwadratowe()
 {
-	cout << "Tutaj obliczysz równanie kwadratowe, deltê oraz miejsca zerowe funkcji." << endl << endl;
+	cout << "Tutaj obliczysz rÃ³wnanie kwadratowe, deltÃª oraz miejsca zerowe funkcji." << endl << endl;
 	cout << "Podaj a: ";
 	double a;
 	cin >> a;
@@ -73,12 +70,12 @@ void rownanie_kwadratowe()
 
 	if (delta < 0)
 	{
-		cout << "Delta jest ujemna, równanie nie ma rozwi¹zania.";
+		cout << "Delta jest ujemna, rÃ³wnanie nie ma rozwiÂ¹zania.";
 	}
 	if (delta == 0)
 	{
 		double x11 = -(b / 2 * a);
-		cout << "Delta jest równa zero, równanie ma jedno rozwi¹zanie: " << x11;
+		cout << "Delta jest rÃ³wna zero, rÃ³wnanie ma jedno rozwiÂ¹zanie: " << x11;
 	}
 	if (delta > 0)
 	{
@@ -87,7 +84,7 @@ void rownanie_kwadratowe()
 		cout << "Delta jest dodatnia, miejsca zerowe to: x1 = " << x21 << " x2 = " << x22;
 	}
 
-	cout << endl <<endl << "Jeœli chcesz wróciæ do menu wciœnij ENTER, jeœli chcesz zakoñczyæ wciœnij ESCAPE.";
+	cout << endl <<endl << "JeÅ“li chcesz wrÃ³ciÃ¦ do menu wciÅ“nij ENTER, jeÅ“li chcesz zakoÃ±czyÃ¦ wciÅ“nij ESCAPE.";
 	char wybor = _getch();
 
 	switch (wybor)
@@ -102,7 +99,7 @@ void rownanie_kwadratowe()
 		break;
 
 	default:
-		cout << endl << endl << "Wyst¹pi³ b³¹d.";
+		cout << endl << endl << "WystÂ¹piÂ³ bÂ³Â¹d.";
 		break;
 	}
 
@@ -111,9 +108,9 @@ void rownanie_kwadratowe()
 void menu()
 {
 	cout << "MENU:" << endl << endl;
-	cout << "1. Równanie kwadratowe." << endl;
+	cout << "1. RÃ³wnanie kwadratowe." << endl;
 	cout << "2. Sinusy, cosinusy i tangensy. [W ROZWOJU]" << endl << endl;
-	cout << "Wybierz opcjê z menu: ";
+	cout << "Wybierz opcjÃª z menu: ";
 	char a = _getch();
 
 	switch (a)
@@ -131,7 +128,7 @@ void menu()
 
 
 	default:
-		cout << endl << endl << "Wyst¹pi³ b³¹d, spróbuj jeszcze raz.";
+		cout << endl << endl << "WystÂ¹piÂ³ bÂ³Â¹d, sprÃ³buj jeszcze raz.";
 			break;
 	}
 
@@ -140,8 +137,8 @@ void menu()
 }
 void sin()
 {
-	cout << "Tutaj dowiesz siê jaki sinus, cosinus lub tangens ma k¹t podany przez Ciebie.";
-	cout << endl << endl << "Interesuje Ciê: ";
+	cout << "Tutaj dowiesz siÃª jaki sinus, cosinus lub tangens ma kÂ¹t podany przez Ciebie.";
+	cout << endl << endl << "Interesuje CiÃª: ";
 	cout << endl << "1. Sinus";
 	cout << endl << "2. Cosinus";
 	cout << endl << "3. Tangens";
@@ -150,16 +147,16 @@ void sin()
 	{
 	//1 SINUS
 	case 49:
-		cout << endl << endl << "Podaj k¹t i zatwierdŸ enter: ";
+		cout << endl << endl << "Podaj kÂ¹t i zatwierdÅ¸ enter: ";
 		int kat1;
 		cin >> kat1;
 		switch (kat1)
 		{
 		case 1:
 		{
-			cout << endl << "Sinus k¹ta " << kat1 << " wynosi 0,0175" << endl;
-			cout << endl << "Jeœli chcesz jeszcze raz poznaæ jak¹œ wartoœæ funkcji trygonometrycznej, wciœnij BACKSPACE.";
-			cout << endl << "Jeœli chcesz wróciæ do menu wciœnij ENTER, a jeœli chcesz zakoñczyæ wciœnij ESCAPE.";
+			cout << endl << "Sinus kÂ¹ta " << kat1 << " wynosi 0,0175" << endl;
+			cout << endl << "JeÅ“li chcesz jeszcze raz poznaÃ¦ jakÂ¹Å“ wartoÅ“Ã¦ funkcji trygonometrycznej, wciÅ“nij BACKSPACE.";
+			cout << endl << "JeÅ“li chcesz wrÃ³ciÃ¦ do menu wciÅ“nij ENTER, a jeÅ“li chcesz zakoÃ±czyÃ¦ wciÅ“nij ESCAPE.";
 			char wybor = _getch();
 			switch (wybor)
 			{
@@ -181,16 +178,16 @@ void sin()
 				break;
 
 			default:
-				cout << endl << endl << "Wyst¹pi³ b³¹d.";
+				cout << endl << endl << "WystÂ¹piÂ³ bÂ³Â¹d.";
 				break;
 			}
 			break; }
 
 		case 2:
 		{
-			cout << endl << "Sinus k¹ta " << kat1 << " wynosi 0,0349" << endl;
-			cout << endl << "Jeœli chcesz jeszcze raz poznaæ jak¹œ wartoœæ funkcji trygonometrycznej, wciœnij BACKSPACE.";
-			cout << endl << "Jeœli chcesz wróciæ do menu wciœnij ENTER, a jeœli chcesz zakoñczyæ wciœnij ESCAPE.";
+			cout << endl << "Sinus kÂ¹ta " << kat1 << " wynosi 0,0349" << endl;
+			cout << endl << "JeÅ“li chcesz jeszcze raz poznaÃ¦ jakÂ¹Å“ wartoÅ“Ã¦ funkcji trygonometrycznej, wciÅ“nij BACKSPACE.";
+			cout << endl << "JeÅ“li chcesz wrÃ³ciÃ¦ do menu wciÅ“nij ENTER, a jeÅ“li chcesz zakoÃ±czyÃ¦ wciÅ“nij ESCAPE.";
 			char wybor = _getch();
 			switch (wybor)
 			{
@@ -212,7 +209,7 @@ void sin()
 				break;
 
 			default:
-				cout << endl << endl << "Wyst¹pi³ b³¹d.";
+				cout << endl << endl << "WystÂ¹piÂ³ bÂ³Â¹d.";
 				break;
 			}
 			break; }
@@ -220,7 +217,7 @@ void sin()
 		
 	//2 COSINUS
 	case 50:
-		cout << endl << endl << "Podaj k¹t i zatwierdŸ enter: ";
+		cout << endl << endl << "Podaj kÂ¹t i zatwierdÅ¸ enter: ";
 		int kat2;
 		cin >> kat2;
 		switch (kat2)
@@ -231,7 +228,7 @@ void sin()
 
 	//3 TANGENS
 	case 51:
-		cout << endl << endl << "Podaj k¹t i zatwierdŸ enter: ";
+		cout << endl << endl << "Podaj kÂ¹t i zatwierdÅ¸ enter: ";
 		int kat3;
 		cin >> kat3;
 		switch (kat3)
@@ -243,7 +240,7 @@ void sin()
 		
 	//default
 	default:
-		cout << "Wyst¹pi³ b³¹d.";
+		cout << "WystÂ¹piÂ³ bÂ³Â¹d.";
 		cin.get();
 		cin.get();
 		break;
